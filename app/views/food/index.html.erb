@@ -1,0 +1,32 @@
+ <h1 style="color: red;
+            font-family: 'Verdana';
+            font-size: 4em;">Recipes:</h1>
+<% @foods.each do |recipe| %>
+<div class="stripe">
+    <div class="container">
+      <div class="row">
+      <div class="col-md-8 col-md-offset2">
+       
+        <ul>
+          <li> 
+           
+            <a href="/recipe/<%= recipe.id %>"><img src="<%= recipe.url %>"  width="120" height="80" alt="<%= recipe.name %>">
+            <%= recipe.name %> -
+           <a href="/recipe/<%= recipe.id %>/edit"><button type="button" class="btn btn-default">
+  <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span> Edit
+</button></a>
+            
+          <a href="/recipe/<%= recipe.id %>/destroy">  <button type="button" class="btn btn-default">
+  <span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span> Destroy
+</button></a> 
+            
+           <a href="/recipe/<%= recipe.id %>"> <button type="button" class="btn btn-default">
+  <span class="glyphicon glyphicon-play" aria-hidden="true"></span> Show
+</button></a> 
+           </li>
+        </ul>
+        </div>
+        </div>
+      </div>
+      </div>
+<% end %>

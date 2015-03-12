@@ -1,0 +1,31 @@
+
+body {
+  background-image: url("http://t3.gstatic.com/images?q=tbn:ANd9GcRYgaAuS97X1tdMaepVgvtKdbgclgp51uFw44kRyxXwD1cQLppB_w");
+  -webkit-background-size: cover; 
+  -moz-background-size: cover;
+  -o-background-size: cover; 
+  background-size: cover; 
+ 
+}
+
+p{
+  color: #000000;
+  font-size: 19px;
+}
+.btn {
+  -webkit-border-radius: 39;
+  -moz-border-radius: 39;
+  border-radius: 39px;
+  font-family: comic sans;
+  font-size: 15px;
+  background: white;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+ul {
+  list-style-type:none;
+}
+ h1 {
+  color: red; 
+  text-align: center;
+}

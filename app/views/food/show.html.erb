@@ -1,0 +1,21 @@
+<h1> <%= @name %></h1>
+<div class="container">
+  <div class="row">
+
+    <div class="media">
+
+    <img class="media-object" src="<%= @recipe.url %>" alt="<%= @recipe.name %>" width="300" height="300">
+   <div class="media-body">
+    <h2 class="media-heading"><%= @recipe.name %></h2>
+    <p> <%= @recipe.caption %></p>
+    <p> <%= @recipe.procedure %> </p>
+   </div>
+    </div>
+    <div class="links">
+    <button type="button" class="btn btn-default">
+      <a href="/recipe/<%= @recipe.id %>/destroy">delete</a></button>
+    <button type="button" class="btn btn-default">
+      <a href="/recipe/<%= @recipe.id %>/edit">edit</a></button>
+    </div>
+    </div>   
+</div>

@@ -1,0 +1,10 @@
+<h2>Edit Recipe</h2>
+
+
+<form action="/update_recipe/<%= @recipe.id %>">
+  <input type="text" name="caption" placeholder="caption" value="<%= @recipe.caption %>">
+  <input type="text" name="url" placeholder="url" value="<%= @recipe.url %>">
+  <input type="text" name="name" placeholder="caption" value="<%= @recipe.name %>">
+  <input type="text" name="procedure" placeholder="caption" value="<%= @recipe.procedure %>">
+  <input type="submit">
+</form>
